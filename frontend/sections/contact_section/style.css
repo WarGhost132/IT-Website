@@ -1,0 +1,141 @@
+:root {
+    --underline_input_hieght: 2px;
+    --input-padding-top: 25px;
+}
+
+
+.contact_form__input input, textarea {
+    outline: unset;
+    background-color: transparent;
+    border: unset;
+    color: inherit;
+}
+.contact_form__input input:focus, textarea:focus {
+    outline: unset;
+}
+
+.contact_form__input {
+    position: relative;
+}
+
+.contact_form__input::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--underline_input_hieght);
+    background-color: var(--color-1);
+
+    transition: all 0.2s ease-in-out;
+}
+.contact_form__error_state::before {
+    background-color: var(--color-error)!important;
+}
+
+
+
+.contact_form_input__wrapper {
+    position: relative;
+    padding-top: var(--input-padding-top);
+}
+.contact_form_input__wrapper label {
+    position: absolute;
+    left: 2px;
+    top: calc(1px + var(--input-padding-top));
+    width: 100%;
+    height: 100%;
+
+    font-size: var(--size-label-before);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.contact_form_placeholder_focused {
+    top: 1px!important;
+    font-size: var(--size-label-after)!important;
+}
+
+
+.contact_form__input textarea {
+    padding-top: 10px;
+    resize: none;
+    overflow: hidden;
+    height: 30px;
+    min-height: 30px;
+    max-height: 150px;
+}
+
+.contact_form__button {
+    width: 100%;
+    height: 54px;
+}
+ 
+.contact_form__checkbox input {
+    height: 20px;
+    width: 20px;
+    margin-top: 7px;
+}
+
+
+.contact_form_textarea__counter {
+    position: absolute;
+    font-size: var(--size-counter);
+    background-color: var(--color-background);
+    right: 14px;
+    bottom: -35px;
+    padding-left: 3px;
+    padding-right: 4px;
+    border: calc(var(--underline_input_hieght)) solid var(--color-1);
+    border-radius: 0 0 10px 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+.contact_form_error__textarea {
+    padding-right: 75px;
+}
+.contact_form_textarea_error__counter {
+    border: calc(var(--underline_input_hieght)) solid var(--color-error);
+}
+
+
+.contact_open_privacy_policy__button {
+    all: unset;
+    cursor: pointer;
+    
+    text-decoration: underline transparent;
+    transition: all 0.2s ease-in-out;
+}
+.contact_open_privacy_policy__button:hover {
+    text-decoration: underline var(--color-input) 2px;
+}
+
+
+.iti__dropdown-content {
+    color: var(--color-input-hover);
+}
+
+
+@media (max-width: 1200px) {
+
+    .contact_section .logo__wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contact_form_textarea__counter {
+        bottom: -28px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .contact_form__button {
+        width: 75%;
+        min-width: 210px;
+    }
+
+}

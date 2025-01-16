@@ -1,0 +1,38 @@
+.privacy_modal__content {
+    background-color: var(--color-background);
+    padding: 20px;
+    border-color: white;
+}
+
+.privacy_modal__content .btn-close {
+    background: var(--color-1) var(--bs-btn-close-bg) center / 1em auto no-repeat;
+}
+
+
+.privacy_modal__content h2 {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: center;
+}
+.privacy_modal__content h2::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 5%;
+    height: 2px;
+    width: 90%;
+    background-color: var(--color-input);
+}
+
+
+.privacy_modal__content ul {
+    list-style: none;
+}
+
+.privacy_modal__content li::before {
+    content: '/';
+    position: absolute;
+    left: 25px;
+    color: var(--color-1);
+}

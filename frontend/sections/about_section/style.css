@@ -1,0 +1,15 @@
+.about_section_image__wrapper img {
+	max-width: 100%;
+}
+
+@media (max-width: 767px) {
+	.about_section_image__wrapper img {
+		max-width: 340px;
+	}
+}
+
+@media (max-width: 480px) {
+	.about_section_image__wrapper img {
+		max-width: 100%;
+	}
+}

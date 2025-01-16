@@ -1,0 +1,21 @@
+// Css
+import '../frontend/general/general.css'
+import '../frontend/sections/main_section/style.css'
+import '../frontend/sections/services_section/style.css'
+import '../frontend/sections/about_section/style.css'
+import '../frontend/sections/projects_section/style.css'
+import '../frontend/sections/contact_section/style.css'
+import '../frontend/sections/result_section/style.css'
+import '../frontend/components/cursor/style.css'
+import '../frontend/modal/privacy.css'
+
+// Js
+import '../frontend/general/general.js'
+import '../frontend/sections/main_section/script.js'
+import '../frontend/sections/services_section/script.js'
+import '../frontend/sections/about_section/script.js'
+import '../frontend/sections/projects_section/script.js'
+import '../frontend/sections/contact_section/send_form.js'
+import '../frontend/sections/contact_section/script.js'
+import '../frontend/sections/result_section/script.js'
+import '../frontend/components/cursor/script.js'
